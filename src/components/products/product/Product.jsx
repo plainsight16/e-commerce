@@ -13,6 +13,7 @@ const Product = ({product}) => {
           <Typography variant='h5'>{Product.price}</Typography>
         </div>
       </CardContent>
+      <Typography variant='h2' color='textSecondary'>{product.description}</Typography>
     </Card>
   )
 }
