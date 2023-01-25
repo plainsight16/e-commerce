@@ -1,9 +1,13 @@
 import React from 'react'
 
 import { Card, CardMedia, CardContent, CardActions, Typography, IconButton } from '@material-ui/core'
-import { AddShoppingCart } from '@material-ui/icons'
+import { AddShoppingCart } from '@mui/icons-material'
+
+import useStyles from './styles.js'
+
 
 const Product = ({product}) => {
+  const classes = useStyles();
   return (
     <Card className={classes.root}>
       <CardMedia className={classes.cardMedia} image=''></CardMedia>
@@ -18,10 +22,9 @@ const Product = ({product}) => {
         <IconButton aria-label="Add to Cart">
           <AddShoppingCart/>
         </IconButton>
-      </CardActions>
-      
+      </CardActions> 
     </Card>
-  )
+  );
 }
 
 export default Product
